@@ -15,7 +15,7 @@
         "url": "https://izap.ai"
       },
       "homepage": "https://izap.ai",
-      "license": "UNLICENSED",
+      "license": "MIT",
       "keywords": ["izap", "whatsapp", "mcp", "api", "oauth", "automation"],
       "category": "integrations",
       "tags": ["whatsapp", "mcp", "crm", "automation", "oauth"]
