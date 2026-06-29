@@ -1,0 +1,10 @@
+# iZap Analytics MCP server for the Codex CLI.
+#
+# Codex reads MCP servers from ~/.codex/config.toml. Merge the block below into
+# that file (Codex supports streamable HTTP servers natively via `url` — no
+# `npx mcp-remote` shim needed). On first use, approve the OAuth sign-in.
+#
+# To target staging, change the url to https://api-staging.izap.ai/mcp.
+
+[mcp_servers.izap]
+url = "https://api.izap.ai/mcp"

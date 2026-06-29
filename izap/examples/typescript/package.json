@@ -1,0 +1,17 @@
+{
+  "name": "izap-mcp-client-example",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Minimal iZap Analytics MCP client example (TypeScript).",
+  "scripts": {
+    "start": "tsx izapMcpClient.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.18.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
