@@ -1,6 +1,6 @@
 {
   "name": "izap",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Integrate external applications with the iZap platform — its HTTP API (orders, chats, businesses, scheduling, webhooks), OAuth 2.0 auth, and the iZap Analytics MCP server, including embedding the MCP in your own code.",
   "author": {
     "name": "iZap",
