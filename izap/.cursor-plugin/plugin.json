@@ -4,7 +4,7 @@
   "description": "Run your WhatsApp business from your agent with the iZap MCP server: read chats and contacts, pull conversation analytics, manage AI assistants, and send WhatsApp messages, templates, and bulk transmissions. Plus guidance for integrating with the iZap REST API, OAuth 2.0, and webhooks.",
   "author": {
     "name": "iZap",
-    "email": "suporte@izap.ai"
+    "email": "support@izap.ai"
   },
   "homepage": "https://izap.ai",
   "repository": "https://github.com/gogixweb/izap-plugin",
