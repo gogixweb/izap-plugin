@@ -3,7 +3,7 @@ name: izap-platform
 description: >
   Use when integrating an external application with the iZap platform — calling
   its HTTP API, handling webhooks, authenticating via OAuth 2.0 / JWT, or
-  connecting to the iZap Analytics MCP server. Covers orders, chats, businesses,
+  connecting to the iZap MCP server. Covers orders, chats, businesses,
   scheduling, webhook delivery, and the MCP tool surface. Do not use for tasks
   inside the iZap monorepo itself.
 ---
@@ -14,7 +14,7 @@ iZap is a WhatsApp-first business automation platform. External applications
 integrate two ways:
 
 1. **HTTP REST API** rooted at `/api/v1`, with OAuth 2.0 / JWT auth.
-2. **MCP server** (`iZap Analytics`) at `/mcp` — 19 tools over Streamable HTTP
+2. **MCP server** (`iZap`) at `/mcp` over Streamable HTTP
    with OAuth: analytics, assistant management, chat/contact reads, WhatsApp
    messaging, and bulk transmissions.
 
@@ -32,7 +32,7 @@ Invoke this skill when the user is:
 - Writing code that calls iZap's HTTP endpoints from a third-party app
 - Building a webhook receiver for iZap events
 - Configuring an OAuth client against iZap
-- Connecting an MCP client (Claude, ChatGPT, etc.) to the iZap Analytics server
+- Connecting an MCP client (Claude, ChatGPT, etc.) to the iZap server
 - **Embedding the iZap MCP as a tool source in your own app or agent** (Python /
   TypeScript MCP SDK, Claude Agent SDK, OpenAI Agents, LangChain) — see
   `references/mcp-integration.md`
@@ -53,7 +53,7 @@ Do **not** use this skill for work inside the iZap monorepo.
 | Webhooks | `/api/v1/webhooks/*` | Inbound provider callbacks; outbound delivery |
 | Feedback | `/api/v1/feedback/*` | End-user feedback capture |
 | SSE | `/api/v1/sse/*` | Server-Sent Events streams |
-| MCP | `/mcp` | 19 tools: analytics, assistants, chats, WhatsApp send + transmissions (see `references/mcp.md`) |
+| MCP | `/mcp` | Tools: analytics, assistants, chats, WhatsApp send + transmissions (see `references/mcp.md`) |
 | Health | `/health` | Liveness probe |
 
 ## How to use this skill

@@ -1,6 +1,6 @@
 # Embedding the iZap MCP in your code
 
-This is for **developers who want the iZap Analytics MCP server as a tool source
+This is for **developers who want the iZap MCP server as a tool source
 inside their own application or agent** — not just an interactive AI client. The
 server speaks **Streamable HTTP** at `{origin}/mcp` and authenticates every
 request with a **Bearer JWT** (audience `fastapi-users:auth`).
@@ -119,7 +119,7 @@ options = ClaudeAgentOptions(
             "headers": {"Authorization": f"Bearer {os.environ['IZAP_JWT']}"},
         }
     },
-    allowed_tools=["mcp__izap__list_connected_assistants", "mcp__izap__get_today_message_stats"],
+    allowed_tools=["mcp__izap__list_connected_assistants", "mcp__izap__get_message_stats"],
 )
 async for message in query(prompt="How many messages did we handle today?", options=options):
     ...

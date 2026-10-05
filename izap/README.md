@@ -1,13 +1,13 @@
 # iZap Claude Code plugin
 
 A Claude Code plugin for **external developers integrating with the iZap
-platform** — its HTTP API and the iZap Analytics MCP server.
+platform** — its HTTP API and the iZap MCP server.
 
 ## What's inside
 
 | Component | Name | Purpose |
 |---|---|---|
-| MCP server | `izap` | iZap Analytics MCP at `https://api.izap.ai/mcp` (OAuth 2.0), pre-wired |
+| MCP server | `izap` | iZap MCP at `https://api.izap.ai/mcp` (OAuth 2.0), pre-wired |
 | Skill | `izap-platform` | Integration guidance: REST API, OAuth/JWT, webhooks, MCP tool catalog, MCP-in-your-code |
 | Command | `/izap-connect` | Connect to and verify the MCP server end-to-end |
 | Command | `/izap-integrate` | Scaffold an external integration against the REST API |
@@ -50,7 +50,7 @@ registration). MCP clients bootstrap the flow automatically via the `401` +
 ```
 izap-plugin/
 ├── .claude-plugin/plugin.json   # manifest
-├── .mcp.json                    # iZap Analytics MCP server (http + OAuth)
+├── .mcp.json                    # iZap MCP server (http + OAuth)
 ├── commands/
 │   ├── izap-connect.md
 │   ├── izap-integrate.md

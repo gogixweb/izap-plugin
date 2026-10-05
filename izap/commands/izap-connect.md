@@ -1,8 +1,8 @@
 ---
-description: Connect to and verify the iZap Analytics MCP server
+description: Connect to and verify the iZap MCP server
 ---
 
-The iZap plugin pre-wires the iZap Analytics MCP server (`izap`) at
+The iZap plugin pre-wires the iZap MCP server (`izap`) at
 `https://api.izap.ai/mcp` via the bundled `.mcp.json`.
 
 Help the user get connected and confirm it works:

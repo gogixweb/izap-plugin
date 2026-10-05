@@ -1,5 +1,5 @@
 ---
-description: Integrating an external application with the iZap platform — HTTP API, OAuth 2.0 / JWT, webhooks, and the iZap Analytics MCP server. Apply when calling iZap endpoints, building a webhook receiver, configuring an OAuth client, or connecting/embedding the iZap MCP.
+description: Integrating an external application with the iZap platform — HTTP API, OAuth 2.0 / JWT, webhooks, and the iZap MCP server. Apply when calling iZap endpoints, building a webhook receiver, configuring an OAuth client, or connecting/embedding the iZap MCP.
 alwaysApply: false
 ---
 
@@ -9,7 +9,7 @@ iZap is a WhatsApp-first business automation platform. External applications
 integrate two ways:
 
 1. **HTTP REST API** rooted at `/api/v1`, with OAuth 2.0 / JWT auth.
-2. **MCP server** (`iZap Analytics`) at `/mcp` — 19 tools over Streamable HTTP
+2. **MCP server** (`iZap`) at `/mcp` over Streamable HTTP
    with OAuth: analytics, assistant management, chat/contact reads, WhatsApp
    messaging, and bulk transmissions.
 

@@ -1,5 +1,5 @@
 /**
- * Minimal iZap Analytics MCP client (TypeScript).
+ * Minimal iZap MCP client (TypeScript).
  *
  * Connects to the iZap MCP server over Streamable HTTP with a Bearer JWT, lists
  * the available tools, and calls `list_connected_assistants`.

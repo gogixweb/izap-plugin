@@ -1,6 +1,6 @@
 # izap-connect
 
-Connect to and verify the iZap Analytics MCP server.
+Connect to and verify the iZap MCP server.
 
 The `izap` MCP server (`https://api.izap.ai/mcp`) is wired via `.cursor/mcp.json`.
 
