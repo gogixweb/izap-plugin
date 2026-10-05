@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Minimal iZap Analytics MCP client (Python).
+"""Minimal iZap MCP client (Python).
 
 Connects to the iZap MCP server over Streamable HTTP with a Bearer JWT, lists the
 available tools, and calls `list_connected_assistants`.

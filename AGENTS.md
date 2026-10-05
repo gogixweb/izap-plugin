@@ -2,7 +2,7 @@
 
 Guidance for AI coding agents (Codex CLI, and any tool that reads `AGENTS.md`)
 **integrating an external application with the iZap platform** — its HTTP API and
-the iZap Analytics MCP server. This is the same guidance shipped as the
+the iZap MCP server. This is the same guidance shipped as the
 `izap-platform` Claude Code skill and the Cursor rule; the reference docs under
 `izap/skills/izap-platform/references/` are the shared source of truth.
 
@@ -10,7 +10,7 @@ iZap is a WhatsApp-first business automation platform. External applications
 integrate two ways:
 
 1. **HTTP REST API** rooted at `/api/v1`, with OAuth 2.0 / JWT auth.
-2. **MCP server** (`iZap Analytics`) at `/mcp`, over Streamable HTTP with OAuth.
+2. **MCP server** (`iZap`) at `/mcp`, over Streamable HTTP with OAuth.
 
 | Environment | API origin | MCP URL |
 |---|---|---|

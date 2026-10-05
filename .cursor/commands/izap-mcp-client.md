@@ -1,6 +1,6 @@
 # izap-mcp-client
 
-Scaffold code that connects the user's app/agent to the iZap Analytics MCP
+Scaffold code that connects the user's app/agent to the iZap MCP
 server as a tool source.
 
 Use `izap/skills/izap-platform/references/mcp-integration.md` (client SDKs +

@@ -1,6 +1,6 @@
 # iZap MCP client examples
 
-Minimal, runnable clients that connect your **own code** to the iZap Analytics
+Minimal, runnable clients that connect your **own code** to the iZap
 MCP server (Streamable HTTP + Bearer JWT), list its tools, and call
 `list_connected_assistants`. Full guidance: `../skills/izap-platform/references/mcp-integration.md`.
 

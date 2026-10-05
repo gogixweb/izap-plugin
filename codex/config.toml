@@ -1,4 +1,4 @@
-# iZap Analytics MCP server for the Codex CLI.
+# iZap MCP server for the Codex CLI.
 #
 # Codex reads MCP servers from ~/.codex/config.toml. Merge the block below into
 # that file (Codex supports streamable HTTP servers natively via `url` — no

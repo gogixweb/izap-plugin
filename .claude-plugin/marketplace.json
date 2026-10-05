@@ -1,6 +1,6 @@
 {
   "name": "izap",
-  "description": "iZap platform integration plugin for Claude Code — the iZap Analytics MCP server, REST/OAuth/webhook guidance, and runnable examples for external developers.",
+  "description": "iZap platform integration plugin — the iZap MCP server, REST/OAuth/webhook guidance, and runnable examples for external developers.",
   "owner": {
     "name": "iZap",
     "url": "https://izap.ai"
@@ -9,8 +9,8 @@
     {
       "name": "izap",
       "source": "./izap",
-      "description": "Integrate external apps with the iZap platform: its HTTP API, OAuth 2.0 auth, webhooks, and the iZap Analytics MCP server — plus guidance and runnable examples for embedding the MCP in your own code.",
-      "version": "0.3.0",
+      "description": "Integrate external apps with the iZap platform: its HTTP API, OAuth 2.0 auth, webhooks, and the iZap MCP server — plus guidance and runnable examples for embedding the MCP in your own code.",
+      "version": "0.4.0",
       "author": {
         "name": "iZap",
         "url": "https://izap.ai"

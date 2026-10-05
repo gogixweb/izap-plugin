@@ -1,0 +1,17 @@
+{
+  "name": "izap",
+  "owner": {
+    "name": "iZap",
+    "url": "https://izap.ai"
+  },
+  "metadata": {
+    "description": "Official iZap plugin for Cursor and Grok Bot: the iZap MCP server for WhatsApp business automation."
+  },
+  "plugins": [
+    {
+      "name": "izap",
+      "source": "./izap",
+      "description": "WhatsApp business automation through the iZap MCP server: chats, contacts, analytics, AI assistants, and outbound messaging."
+    }
+  ]
+}

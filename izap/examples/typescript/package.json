@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Minimal iZap Analytics MCP client example (TypeScript).",
+  "description": "Minimal iZap MCP client example (TypeScript).",
   "scripts": {
     "start": "tsx izapMcpClient.ts"
   },

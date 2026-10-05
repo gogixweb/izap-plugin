@@ -2,18 +2,18 @@
 
 Integrate external applications with the **iZap platform** — its HTTP API
 (orders, chats, businesses, scheduling, webhooks), OAuth 2.0 auth, and the
-**iZap Analytics MCP server** — from your AI coding tool of choice.
+**iZap MCP server** — from your AI coding tool of choice.
 
 The portable core is the `izap` MCP server at `https://api.izap.ai/mcp`
 (Streamable HTTP + OAuth 2.0). This repo ships ready-to-use config and guidance
-for **Claude Code**, **Cursor**, and **Codex**, all backed by one shared set of
+for **Claude Code**, **Cursor**, **Grok Bot**, and **Codex**, all backed by one shared set of
 reference docs under [`izap/skills/izap-platform/references/`](izap/skills/izap-platform/references/).
 
 ## What's inside
 
 | Component | Name | Purpose |
 |---|---|---|
-| MCP server | `izap` | iZap Analytics MCP at `https://api.izap.ai/mcp` (OAuth 2.0) |
+| MCP server | `izap` | iZap MCP at `https://api.izap.ai/mcp` (OAuth 2.0) |
 | Guidance | `izap-platform` | REST API, OAuth/JWT, webhooks, MCP tool catalog, MCP-in-your-code |
 | Commands | `izap-connect`, `izap-integrate`, `izap-mcp-client` | Connect/verify, scaffold a REST integration, scaffold an MCP client |
 | Examples | `izap/examples/` | Runnable Python + TypeScript MCP clients (bearer-token auth) |
@@ -35,15 +35,26 @@ then install the plugin:
 approve the OAuth sign-in prompt. The plugin bundles the MCP server, the
 `izap-platform` skill, and the three commands.
 
-### Cursor
+### Cursor and Grok Bot
 
-Copy [`.cursor/`](.cursor/) into your project (or merge its contents):
+The `izap` plugin is a Cursor plugin
+([`izap/.cursor-plugin/plugin.json`](izap/.cursor-plugin/plugin.json), catalog at
+[`.cursor-plugin/marketplace.json`](.cursor-plugin/marketplace.json)), so it installs
+from the Cursor Marketplace in both hosts:
+
+- **Cursor** — install **iZap** from the Cursor Marketplace.
+- **Grok Bot** — **Settings → Plugins → Marketplace**, install **iZap**.
+
+The plugin bundles the `izap` MCP server, the `izap-platform` skill, and the three
+commands. On first MCP use, approve the OAuth sign-in in the browser.
+
+Without the plugin, add the server by URL instead: in Grok Bot, **Settings →
+Plugins → add a custom connector**; in Cursor, copy [`.cursor/`](.cursor/) into
+your project:
 
 - [`.cursor/mcp.json`](.cursor/mcp.json) — the `izap` MCP server.
 - [`.cursor/rules/izap-platform.mdc`](.cursor/rules/izap-platform.mdc) — integration guidance.
 - [`.cursor/commands/`](.cursor/commands/) — `/izap-connect`, `/izap-integrate`, `/izap-mcp-client`.
-
-Enable the `izap` server in Cursor's MCP settings and approve the OAuth prompt.
 
 ### Codex
 
@@ -67,7 +78,7 @@ custom prompts.
 | Staging | `https://api-staging.izap.ai` | `https://api-staging.izap.ai/mcp` |
 
 To target staging, point the `url` at the staging MCP URL in
-`izap/.mcp.json` (Claude Code), `.cursor/mcp.json` (Cursor), or `codex/config.toml`
+`izap/.mcp.json` (Claude Code), `izap/mcp.json` (Cursor/Grok Bot plugin), `.cursor/mcp.json` (Cursor project config), or `codex/config.toml`
 (Codex).
 
 ## Auth
@@ -83,9 +94,13 @@ registration). MCP clients bootstrap the flow automatically via the `401` +
 ```
 izap-plugin/
 ├── .claude-plugin/marketplace.json   # Claude Code marketplace catalog → ./izap
-├── izap/                             # the Claude Code plugin
+├── .cursor-plugin/marketplace.json   # Cursor / Grok Bot marketplace catalog → ./izap
+├── izap/                             # the plugin (Claude Code, Cursor, Grok Bot)
 │   ├── .claude-plugin/plugin.json
-│   ├── .mcp.json                     # iZap Analytics MCP (http + OAuth)
+│   ├── .cursor-plugin/plugin.json
+│   ├── .mcp.json                     # iZap MCP for Claude Code (http + OAuth)
+│   ├── mcp.json                      # iZap MCP for Cursor / Grok Bot (OAuth)
+│   ├── assets/logo.png
 │   ├── commands/                     # izap-connect, izap-integrate, izap-mcp-client
 │   ├── examples/                     # runnable Python + TypeScript MCP clients
 │   └── skills/izap-platform/         # SKILL.md + references/ (shared source of truth)

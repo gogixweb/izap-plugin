@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "izap": {
+      "url": "https://api.izap.ai/mcp"
+    }
+  }
+}

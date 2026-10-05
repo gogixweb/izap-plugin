@@ -3,7 +3,7 @@ description: Scaffold code that connects your app/agent to the iZap MCP server
 argument-hint: "[stack + goal, e.g. 'a Python service that reads daily message stats']"
 ---
 
-The user wants to embed the **iZap Analytics MCP server** as a tool source in
+The user wants to embed the **iZap MCP server** as a tool source in
 their own code: **$ARGUMENTS**
 
 Use the `izap-platform` skill as your source of truth — read

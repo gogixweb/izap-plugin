@@ -33,7 +33,7 @@ For motorcycle/delivery deployments the public surface is narrower:
   violations); `500` for unexpected server/database errors.
 - **CORS**: driven by `FRONTEND_URLS` + `CORS_ORIGIN_REGEX` server-side.
 - **Webhooks**: verify signatures before trusting payloads. Inbound provider
-  callbacks (e.g. Twilio) carry a provider signature that the server validates;
+  callbacks (e.g. WhatsApp Cloud) carry a provider signature that the server validates;
   outbound webhook deliveries to your endpoint should be HMAC-verified on your side.
 
 ## Example: submit feedback
